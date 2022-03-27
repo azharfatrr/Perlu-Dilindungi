@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.perlu_dilindungi.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_navigation_news_to_newsWebFragment"
+            app:destination="@id/navigation_news_web"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.perlu_dilindungi.ui.healthCenter.HealthCenterFragment"
+        android:label="@string/title_health_center"
+        tools:layout="@layout/fragment_health_center">
+        <action
+            android:id="@+id/action_navigation_location_to_detailHealthCenterFragment"
+            app:destination="@id/navigation_detail_health_center" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="com.perlu_dilindungi.ui.bookmark.BookmarkFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/fragment_bookmark">
+        <action
+            android:id="@+id/action_navigation_bookmark_to_detailHealthCenterFragment"
+            app:destination="@id/navigation_detail_health_center" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news_web"
+        android:name="com.perlu_dilindungi.ui.news.NewsWebFragment"
+        android:label="@string/news_web_label"
+        tools:layout="@layout/fragment_news_web">
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_detail_health_center"
+        android:name="com.perlu_dilindungi.ui.detailHealthCenter.DetailHealthCenterFragment"
+        android:label="@string/detail_health_center_label"
+        tools:layout="@layout/fragment_detail_health_center" />
+</navigation>

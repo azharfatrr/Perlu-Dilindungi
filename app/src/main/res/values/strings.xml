@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Perlu Dilindungi</string>
+    <string name="title_news">News</string>
+    <string name="title_health_center">Health Center</string>
+    <string name="title_bookmark">Bookmark</string>
+    <string name="status_image">status_image</string>
+    <string name="news_web_label">News Information</string>
+    <string name="health_center_pilih_provinsi">Pilih Provinsi</string>
+    <string name="health_center_pilih_kota">Pilih Kota</string>
+    <string name="health_center_base_status">Silahkan Pilih Kota dan Provinsi Anda</string>
+    <string name="search_button">Search</string>
+    <string name="fab_scan_qr">scan_qr</string>
+    <string name="detail_health_center_label">Detail Health Center</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="bookmark">+ Bookmark</string>
+    <string name="unbookmark">- Unbookmark</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
